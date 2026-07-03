@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ═══ TODO: 案件ごとに書き換え ═══ -->
+<title>サイトタイトル | 屋号</title>
+<meta name="description" content="サイトの説明文（120文字前後）。検索結果に表示されます。">
+<meta name="theme-color" content="#0047BA">
+
+<!-- OGP（SNS共有時の表示）※公開後、URLを本番に差し替え -->
+<meta property="og:site_name" content="屋号">
+<meta property="og:title" content="サイトタイトル">
+<meta property="og:description" content="SNSで共有されたときの説明文。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://REPLACE.example.com/">
+<meta property="og:image" content="https://REPLACE.example.com/assets/ogp.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<!-- ═══════════════════════════════ -->
+
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ══════════ ヘッダー ══════════ -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="#" class="logo">BRAND</a>
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-toggle-label" aria-label="メニュー"><span></span><span></span><span></span></label>
+
+    <nav class="global-nav">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#works">Works</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#contact" class="nav-cta">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- ══════════ ヒーロー ══════════ -->
+<section class="hero" id="hero">
+  <span class="hero-blob blob-1" aria-hidden="true"></span>
+  <span class="hero-blob blob-2" aria-hidden="true"></span>
+  <div class="container hero-inner">
+    <p class="hero-eyebrow"><span class="star">★</span> CATCH PHRASE</p>
+    <h1 class="hero-title">ここに<br><span class="hl">キャッチコピー。</span></h1>
+    <p class="hero-lead">サイトの第一印象を決めるリード文。<br class="pc-only">サービスや思いを一言で。</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn btn-primary">お問い合わせ</a>
+      <a href="#about" class="btn btn-outline">詳しく見る</a>
+    </div>
+  </div>
+  <div class="hero-scroll" aria-hidden="true">SCROLL</div>
+</section>
+
+<!-- ══════════ マーキー（流れる文字・PLAZA風） ══════════ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>BRAND ★ WELCOME ★ BRAND ★ WELCOME ★ BRAND ★ WELCOME ★&nbsp;</span>
+    <span>BRAND ★ WELCOME ★ BRAND ★ WELCOME ★ BRAND ★ WELCOME ★&nbsp;</span>
+  </div>
+</div>
+
+<!-- ══════════ ABOUT ══════════ -->
+<section class="section about" id="about">
+  <div class="container">
+    <p class="section-eyebrow">ABOUT</p>
+    <h2 class="section-title">わたしたちについて</h2>
+    <p class="section-lead">コンセプトや強みを紹介する導入文。1〜2文で簡潔に。</p>
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-icon" aria-hidden="true">✦</div>
+        <h3>強み その1</h3>
+        <p>特徴やこだわりの説明。ユーザーの得られる価値を書く。</p>
+      </div>
+      <div class="card">
+        <div class="card-icon" aria-hidden="true">✦</div>
+        <h3>強み その2</h3>
+        <p>特徴やこだわりの説明。ユーザーの得られる価値を書く。</p>
+      </div>
+      <div class="card">
+        <div class="card-icon" aria-hidden="true">✦</div>
+        <h3>強み その3</h3>
+        <p>特徴やこだわりの説明。ユーザーの得られる価値を書く。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ SERVICES ══════════ -->
+<section class="section services section-blue" id="services">
+  <div class="container">
+    <p class="section-eyebrow">SERVICES</p>
+    <h2 class="section-title">サービス</h2>
+    <div class="service-list">
+      <article class="service-item">
+        <span class="service-no">01</span>
+        <div class="service-body">
+          <h3>サービス名</h3>
+          <p>提供内容の説明。価格や特徴を添える。</p>
+        </div>
+      </article>
+      <article class="service-item">
+        <span class="service-no">02</span>
+        <div class="service-body">
+          <h3>サービス名</h3>
+          <p>提供内容の説明。価格や特徴を添える。</p>
+        </div>
+      </article>
+      <article class="service-item">
+        <span class="service-no">03</span>
+        <div class="service-body">
+          <h3>サービス名</h3>
+          <p>提供内容の説明。価格や特徴を添える。</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ WORKS / GALLERY ══════════ -->
+<section class="section works" id="works">
+  <div class="container">
+    <p class="section-eyebrow">WORKS</p>
+    <h2 class="section-title">実績・ギャラリー</h2>
+    <div class="works-grid">
+      <figure class="work-card">
+        <div class="work-thumb"><span class="thumb-placeholder">IMAGE</span></div>
+        <figcaption>キャプション</figcaption>
+      </figure>
+      <figure class="work-card">
+        <div class="work-thumb"><span class="thumb-placeholder">IMAGE</span></div>
+        <figcaption>キャプション</figcaption>
+      </figure>
+      <figure class="work-card">
+        <div class="work-thumb"><span class="thumb-placeholder">IMAGE</span></div>
+        <figcaption>キャプション</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ CONTACT ══════════ -->
+<section class="section contact" id="contact">
+  <div class="container container-narrow">
+    <p class="section-eyebrow">CONTACT</p>
+    <h2 class="section-title">お問い合わせ</h2>
+    <p class="section-lead">お気軽にお問い合わせください。</p>
+
+    <!--
+      ═══ お問い合わせフォームの設定（Googleフォーム連携） ═══
+      1. Googleフォームを作成（質問：お名前 / メール / 件名 / 内容）
+      2. 「送信」→ リンクからフォームIDを取得し、action の FORM_ID を置換
+      3. 各 input の name="entry.XXXX" を、各質問の entry ID に置換
+         （フォームのviewformページのソースから取得できる）
+      ※ 手っ取り早く済ませたい場合は Formspree でも可（action にFormspreeのURLを入れるだけ）
+    -->
+    <form class="contact-form" id="contactForm"
+          action="https://docs.google.com/forms/d/e/FORM_ID/formResponse"
+          method="POST" target="hidden_iframe">
+      <div class="form-group">
+        <label for="name">お名前 <span class="required">必須</span></label>
+        <input type="text" id="name" name="entry.0000000001" required autocomplete="name">
+      </div>
+      <div class="form-group">
+        <label for="email">メールアドレス <span class="required">必須</span></label>
+        <input type="email" id="email" name="entry.0000000002" required autocomplete="email">
+      </div>
+      <div class="form-group">
+        <label for="subject">件名</label>
+        <input type="text" id="subject" name="entry.0000000003">
+      </div>
+      <div class="form-group">
+        <label for="message">お問い合わせ内容 <span class="required">必須</span></label>
+        <textarea id="message" name="entry.0000000004" rows="6" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary btn-lg">送信する</button>
+      <p class="form-success" id="formSuccess" hidden>送信しました。ありがとうございます！</p>
+    </form>
+    <iframe name="hidden_iframe" id="hiddenIframe" style="display:none" title="送信処理用"></iframe>
+  </div>
+</section>
+
+</main>
+
+<!-- ══════════ フッター ══════════ -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p class="footer-logo">BRAND</p>
+    <nav class="footer-nav">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#works">Works</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <p class="copyright">&copy; 2026 BRAND</p>
+  </div>
+</footer>
+
+<script>
+// お問い合わせ：完了画面に飛ばさず、その場で完了表示（Googleフォーム連携時）
+(function () {
+  const form = document.getElementById('contactForm');
+  const iframe = document.getElementById('hiddenIframe');
+  const success = document.getElementById('formSuccess');
+  if (!form) return;
+  let submitted = false;
+  form.addEventListener('submit', () => { submitted = true; });
+  iframe.addEventListener('load', () => {
+    if (!submitted) return;
+    submitted = false;
+    form.reset();
+    success.hidden = false;
+  });
+
+  // スマホ：メニュー内リンクを押したら閉じる
+  const toggle = document.getElementById('nav-toggle');
+  document.querySelectorAll('.global-nav a').forEach(a => {
+    a.addEventListener('click', () => { if (toggle) toggle.checked = false; });
+  });
+})();
+</script>
+
+</body>
+</html>
