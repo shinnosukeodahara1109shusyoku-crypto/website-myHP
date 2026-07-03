@@ -4,15 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- ═══ TODO: 案件ごとに書き換え ═══ -->
-<title>サイトタイトル | 屋号</title>
-<meta name="description" content="サイトの説明文（120文字前後）。検索結果に表示されます。">
+<!-- ═══ サイト情報（公開URLが決まったら og:url / og:image を差し替え） ═══ -->
+<title>Shin｜Web制作・ランディングページ制作</title>
+<meta name="description" content="Web制作を手がける大学生 Shin のポートフォリオサイト。個人クリエイター・学生・小規模事業の方へ、学生価格で真摯にホームページ／LP制作を承ります。初回相談・お見積もり無料。">
 <meta name="theme-color" content="#0047BA">
 
 <!-- OGP（SNS共有時の表示）※公開後、URLを本番に差し替え -->
-<meta property="og:site_name" content="屋号">
-<meta property="og:title" content="サイトタイトル">
-<meta property="og:description" content="SNSで共有されたときの説明文。">
+<meta property="og:site_name" content="Shin Web Works">
+<meta property="og:title" content="Shin｜Web制作・ランディングページ制作">
+<meta property="og:description" content="学生価格で真摯に。あなたの“作りたい”を、Webのカタチに。初回相談・お見積もり無料。">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://REPLACE.example.com/">
 <meta property="og:image" content="https://REPLACE.example.com/assets/ogp.jpg">
@@ -33,7 +33,7 @@
 <!-- ══════════ ヘッダー ══════════ -->
 <header class="site-header">
   <div class="container header-inner">
-    <a href="#" class="logo">BRAND</a>
+    <a href="#hero" class="logo">Shin</a>
 
     <input type="checkbox" id="nav-toggle" class="nav-toggle">
     <label for="nav-toggle" class="nav-toggle-label" aria-label="メニュー"><span></span><span></span><span></span></label>
@@ -57,100 +57,132 @@
   <span class="hero-blob blob-1" aria-hidden="true"></span>
   <span class="hero-blob blob-2" aria-hidden="true"></span>
   <div class="container hero-inner">
-    <p class="hero-eyebrow"><span class="star">★</span> CATCH PHRASE</p>
-    <h1 class="hero-title">ここに<br><span class="hl">キャッチコピー。</span></h1>
-    <p class="hero-lead">サイトの第一印象を決めるリード文。<br class="pc-only">サービスや思いを一言で。</p>
+    <p class="hero-eyebrow"><span class="star">★</span> WEB制作・LP制作　案件募集中</p>
+    <h1 class="hero-title">あなたの“作りたい”を、<br><span class="hl">Webのカタチに。</span></h1>
+    <p class="hero-lead">Web制作を手がける大学生 Shin です。<br class="pc-only">個人・学生・小さなお店の「はじめの一歩」を、学生価格で全力サポートします。</p>
     <div class="hero-actions">
       <a href="#contact" class="btn btn-primary">お問い合わせ</a>
-      <a href="#about" class="btn btn-outline">詳しく見る</a>
+      <a href="#works" class="btn btn-outline">制作実績を見る</a>
     </div>
   </div>
   <div class="hero-scroll" aria-hidden="true">SCROLL</div>
 </section>
 
-<!-- ══════════ マーキー（流れる文字・PLAZA風） ══════════ -->
+<!-- ══════════ マーキー（流れる文字） ══════════ -->
 <div class="marquee" aria-hidden="true">
   <div class="marquee-track">
-    <span>BRAND ★ WELCOME ★ BRAND ★ WELCOME ★ BRAND ★ WELCOME ★&nbsp;</span>
-    <span>BRAND ★ WELCOME ★ BRAND ★ WELCOME ★ BRAND ★ WELCOME ★&nbsp;</span>
+    <span>WEB制作 ★ LP制作 ★ 案件募集中 ★ 初回相談無料 ★ 学生価格 ★&nbsp;</span>
+    <span>WEB制作 ★ LP制作 ★ 案件募集中 ★ 初回相談無料 ★ 学生価格 ★&nbsp;</span>
   </div>
 </div>
 
-<!-- ══════════ ABOUT ══════════ -->
+<!-- ══════════ ABOUT（プロフィール） ══════════ -->
 <section class="section about" id="about">
   <div class="container">
     <p class="section-eyebrow">ABOUT</p>
-    <h2 class="section-title">わたしたちについて</h2>
-    <p class="section-lead">コンセプトや強みを紹介する導入文。1〜2文で簡潔に。</p>
+    <h2 class="section-title">Shin について</h2>
+    <p class="section-lead">
+      Web制作に魅せられた大学生です。実績はまだ多くありませんが、その分ひとつの案件に全力で向き合います。<br class="pc-only">
+      個人開発ゲームのLP制作などを手がけてきました。初心者だからこその丁寧さと、学生ならではの価格で、あなたのプロジェクトに寄り添います。
+    </p>
     <div class="card-grid">
       <div class="card">
-        <div class="card-icon" aria-hidden="true">✦</div>
-        <h3>強み その1</h3>
-        <p>特徴やこだわりの説明。ユーザーの得られる価値を書く。</p>
+        <div class="card-icon" aria-hidden="true">￥</div>
+        <h3>学生価格</h3>
+        <p>「Webサイトは高そう…」を、学生ならではの価格でお手伝い。まずは気軽にご相談ください。</p>
       </div>
       <div class="card">
         <div class="card-icon" aria-hidden="true">✦</div>
-        <h3>強み その2</h3>
-        <p>特徴やこだわりの説明。ユーザーの得られる価値を書く。</p>
+        <h3>真摯に、全力で</h3>
+        <p>案件数を絞り、ひとつひとつに全力で。納得いただけるまで丁寧にやり取りします。</p>
       </div>
       <div class="card">
-        <div class="card-icon" aria-hidden="true">✦</div>
-        <h3>強み その3</h3>
-        <p>特徴やこだわりの説明。ユーザーの得られる価値を書く。</p>
+        <div class="card-icon" aria-hidden="true">↺</div>
+        <h3>小回りが効く</h3>
+        <p>個人だからこそ、細かい相談や修正にもフットワーク軽く対応。気軽に頼めるパートナーに。</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ══════════ SERVICES ══════════ -->
+<!-- ══════════ SERVICES（できること） ══════════ -->
 <section class="section services section-blue" id="services">
   <div class="container">
     <p class="section-eyebrow">SERVICES</p>
-    <h2 class="section-title">サービス</h2>
+    <h2 class="section-title">できること</h2>
     <div class="service-list">
       <article class="service-item">
         <span class="service-no">01</span>
         <div class="service-body">
-          <h3>サービス名</h3>
-          <p>提供内容の説明。価格や特徴を添える。</p>
+          <h3>ランディングページ（LP）制作</h3>
+          <p>商品・サービス・作品を1ページで魅力的に紹介。スマホ対応・お問い合わせ導線までまとめて制作します。</p>
         </div>
       </article>
       <article class="service-item">
         <span class="service-no">02</span>
         <div class="service-body">
-          <h3>サービス名</h3>
-          <p>提供内容の説明。価格や特徴を添える。</p>
+          <h3>ホームページ制作</h3>
+          <p>お店・個人事業・クリエイターの“顔”になるサイトを制作。複数ページ・ギャラリー・フォームにも対応。</p>
         </div>
       </article>
       <article class="service-item">
         <span class="service-no">03</span>
         <div class="service-body">
-          <h3>サービス名</h3>
-          <p>提供内容の説明。価格や特徴を添える。</p>
+          <h3>修正・運用サポート</h3>
+          <p>「文章や画像を差し替えたい」「少しデザインを直したい」などの小さな修正・更新も承ります。</p>
         </div>
       </article>
     </div>
+    <p class="services-note">💡 料金はご予算・内容に応じてご相談。<strong>初回のご相談・お見積もりは無料</strong>です。</p>
   </div>
 </section>
 
-<!-- ══════════ WORKS / GALLERY ══════════ -->
+<!-- ══════════ WORKS（制作実績） ══════════ -->
 <section class="section works" id="works">
   <div class="container">
     <p class="section-eyebrow">WORKS</p>
-    <h2 class="section-title">実績・ギャラリー</h2>
+    <h2 class="section-title">制作実績</h2>
+    <p class="section-lead">東大生の個人開発ゲームのLP／サイト制作を担当しました。</p>
     <div class="works-grid">
+
+      <!-- 実績1 -->
       <figure class="work-card">
-        <div class="work-thumb"><span class="thumb-placeholder">IMAGE</span></div>
-        <figcaption>キャプション</figcaption>
+        <a class="work-thumb" href="https://sepakgames.netlify.app/" target="_blank" rel="noopener">
+          <!-- TODO: スクショを撮ったら assets/ に入れて下の <img> のコメントを外す -->
+          <!-- <img src="assets/work-sepakgames.png" alt="sepak games のLP"> -->
+          <span class="thumb-placeholder">SEPAK GAMES</span>
+        </a>
+        <figcaption>
+          <span class="work-name">sepak games</span>
+          <span class="work-desc">個人開発ゲームの紹介LP</span>
+          <a class="work-link" href="https://sepakgames.netlify.app/" target="_blank" rel="noopener">サイトを見る ↗</a>
+        </figcaption>
       </figure>
+
+      <!-- 実績2 -->
       <figure class="work-card">
-        <div class="work-thumb"><span class="thumb-placeholder">IMAGE</span></div>
-        <figcaption>キャプション</figcaption>
+        <a class="work-thumb" href="https://sepak-luxe-web.netlify.app/" target="_blank" rel="noopener">
+          <!-- <img src="assets/work-sepak-luxe.png" alt="sepak luxe のサイト"> -->
+          <span class="thumb-placeholder">SEPAK LUXE</span>
+        </a>
+        <figcaption>
+          <span class="work-name">sepak luxe</span>
+          <span class="work-desc">個人プロジェクトのWebサイト</span>
+          <a class="work-link" href="https://sepak-luxe-web.netlify.app/" target="_blank" rel="noopener">サイトを見る ↗</a>
+        </figcaption>
       </figure>
-      <figure class="work-card">
-        <div class="work-thumb"><span class="thumb-placeholder">IMAGE</span></div>
-        <figcaption>キャプション</figcaption>
+
+      <!-- 実績3（今後追加用のプレースホルダー：不要なら削除OK） -->
+      <figure class="work-card work-card-next">
+        <div class="work-thumb work-thumb-empty">
+          <span class="thumb-placeholder">COMING SOON</span>
+        </div>
+        <figcaption>
+          <span class="work-name">次はあなたの案件かも</span>
+          <span class="work-desc">実績はこれから増やしていきます</span>
+        </figcaption>
       </figure>
+
     </div>
   </div>
 </section>
@@ -160,39 +192,39 @@
   <div class="container container-narrow">
     <p class="section-eyebrow">CONTACT</p>
     <h2 class="section-title">お問い合わせ</h2>
-    <p class="section-lead">お気軽にお問い合わせください。</p>
+    <p class="section-lead">「こんなの作れる？」というご相談だけでも大歓迎です。<br class="pc-only">初回相談・お見積もりは無料。お気軽にどうぞ。</p>
 
     <!--
-      ═══ お問い合わせフォームの設定（Googleフォーム連携） ═══
-      1. Googleフォームを作成（質問：お名前 / メール / 件名 / 内容）
-      2. 「送信」→ リンクからフォームIDを取得し、action の FORM_ID を置換
-      3. 各 input の name="entry.XXXX" を、各質問の entry ID に置換
-         （フォームのviewformページのソースから取得できる）
-      ※ 手っ取り早く済ませたい場合は Formspree でも可（action にFormspreeのURLを入れるだけ）
+      ═══ お問い合わせフォーム設定（Formspree） ═══
+      1. https://formspree.io/ で無料登録し、受信メール（今回のGmail）を設定
+      2. 発行されるフォームエンドポイント（例：https://formspree.io/f/abcdwxyz）を取得
+      3. 下の <form> の action="" にそのURLを貼る（YOUR_FORM_ID を置換）
+      ※ 設定するまでは送信してもエラー表示になります（動作確認は設定後に）
     -->
     <form class="contact-form" id="contactForm"
-          action="https://docs.google.com/forms/d/e/FORM_ID/formResponse"
-          method="POST" target="hidden_iframe">
+          action="https://formspree.io/f/YOUR_FORM_ID"
+          method="POST">
       <div class="form-group">
         <label for="name">お名前 <span class="required">必須</span></label>
-        <input type="text" id="name" name="entry.0000000001" required autocomplete="name">
+        <input type="text" id="name" name="name" required autocomplete="name">
       </div>
       <div class="form-group">
         <label for="email">メールアドレス <span class="required">必須</span></label>
-        <input type="email" id="email" name="entry.0000000002" required autocomplete="email">
+        <input type="email" id="email" name="email" required autocomplete="email">
       </div>
       <div class="form-group">
         <label for="subject">件名</label>
-        <input type="text" id="subject" name="entry.0000000003">
+        <input type="text" id="subject" name="subject">
       </div>
       <div class="form-group">
         <label for="message">お問い合わせ内容 <span class="required">必須</span></label>
-        <textarea id="message" name="entry.0000000004" rows="6" required></textarea>
+        <textarea id="message" name="message" rows="6" required></textarea>
       </div>
+      <!-- Formspree：メールの件名を分かりやすく／自動返信元の設定 -->
+      <input type="hidden" name="_subject" value="【HP】お問い合わせが届きました">
       <button type="submit" class="btn btn-primary btn-lg">送信する</button>
-      <p class="form-success" id="formSuccess" hidden>送信しました。ありがとうございます！</p>
+      <p class="form-note" id="formNote" role="status" aria-live="polite" hidden></p>
     </form>
-    <iframe name="hidden_iframe" id="hiddenIframe" style="display:none" title="送信処理用"></iframe>
   </div>
 </section>
 
@@ -201,34 +233,67 @@
 <!-- ══════════ フッター ══════════ -->
 <footer class="site-footer">
   <div class="container footer-inner">
-    <p class="footer-logo">BRAND</p>
+    <p class="footer-logo">Shin</p>
     <nav class="footer-nav">
       <a href="#about">About</a>
       <a href="#services">Services</a>
       <a href="#works">Works</a>
       <a href="#contact">Contact</a>
     </nav>
-    <p class="copyright">&copy; 2026 BRAND</p>
+    <!-- TODO: SNSアカウントのURLを差し替え（不要な行は削除OK） -->
+    <div class="footer-sns">
+      <a href="#" target="_blank" rel="noopener" aria-label="X (Twitter)">X</a>
+      <a href="#" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+      <a href="#" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+    </div>
+    <p class="copyright">&copy; 2026 Shin</p>
   </div>
 </footer>
 
 <script>
-// お問い合わせ：完了画面に飛ばさず、その場で完了表示（Googleフォーム連携時）
 (function () {
+  // ── お問い合わせフォーム（Formspree・非同期送信でその場で結果表示） ──
   const form = document.getElementById('contactForm');
-  const iframe = document.getElementById('hiddenIframe');
-  const success = document.getElementById('formSuccess');
-  if (!form) return;
-  let submitted = false;
-  form.addEventListener('submit', () => { submitted = true; });
-  iframe.addEventListener('load', () => {
-    if (!submitted) return;
-    submitted = false;
-    form.reset();
-    success.hidden = false;
-  });
+  const note = document.getElementById('formNote');
+  if (form) {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const btn = form.querySelector('button[type="submit"]');
+      const showNote = (msg, ok) => {
+        note.textContent = msg;
+        note.hidden = false;
+        note.classList.toggle('is-error', !ok);
+      };
+      // フォーム未設定のときのガード
+      if (form.action.includes('YOUR_FORM_ID')) {
+        showNote('※ フォームは現在準備中です。設定完了までお待ちください。', false);
+        return;
+      }
+      btn.disabled = true;
+      const original = btn.textContent;
+      btn.textContent = '送信中…';
+      try {
+        const res = await fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { 'Accept': 'application/json' }
+        });
+        if (res.ok) {
+          form.reset();
+          showNote('送信しました。ありがとうございます！折り返しご連絡します。', true);
+        } else {
+          showNote('送信に失敗しました。お手数ですが時間をおいて再度お試しください。', false);
+        }
+      } catch (err) {
+        showNote('通信エラーが発生しました。ネットワークをご確認ください。', false);
+      } finally {
+        btn.disabled = false;
+        btn.textContent = original;
+      }
+    });
+  }
 
-  // スマホ：メニュー内リンクを押したら閉じる
+  // ── スマホ：メニュー内リンクを押したら閉じる ──
   const toggle = document.getElementById('nav-toggle');
   document.querySelectorAll('.global-nav a').forEach(a => {
     a.addEventListener('click', () => { if (toggle) toggle.checked = false; });
