@@ -203,36 +203,19 @@
     <p class="section-lead">「こんなの作れる？」というご相談だけでも大歓迎です。<br class="pc-only">初回相談・お見積もりは無料。お気軽にどうぞ。</p>
 
     <!--
-      ═══ お問い合わせフォーム設定（Formspree） ═══
-      1. https://formspree.io/ で無料登録し、受信メール（今回のGmail）を設定
-      2. 発行されるフォームエンドポイント（例：https://formspree.io/f/abcdwxyz）を取得
-      3. 下の <form> の action="" にそのURLを貼る（YOUR_FORM_ID を置換）
-      ※ 設定するまでは送信してもエラー表示になります（動作確認は設定後に）
+      ═══ お問い合わせフォーム（Googleフォーム） ═══
+      下のボタンからGoogleフォームを開く方式。
+      フォームを差し替えるときは、href のURLを新しいGoogleフォームの
+      「送信」→ 🔗リンク で取得した viewform のURLに置き換えるだけ。
     -->
-    <form class="contact-form" id="contactForm"
-          action="https://formspree.io/f/YOUR_FORM_ID"
-          method="POST">
-      <div class="form-group">
-        <label for="name">お名前 <span class="required">必須</span></label>
-        <input type="text" id="name" name="name" required autocomplete="name">
-      </div>
-      <div class="form-group">
-        <label for="email">メールアドレス <span class="required">必須</span></label>
-        <input type="email" id="email" name="email" required autocomplete="email">
-      </div>
-      <div class="form-group">
-        <label for="subject">件名</label>
-        <input type="text" id="subject" name="subject">
-      </div>
-      <div class="form-group">
-        <label for="message">お問い合わせ内容 <span class="required">必須</span></label>
-        <textarea id="message" name="message" rows="6" required></textarea>
-      </div>
-      <!-- Formspree：メールの件名を分かりやすく／自動返信元の設定 -->
-      <input type="hidden" name="_subject" value="【HP】お問い合わせが届きました">
-      <button type="submit" class="btn btn-primary btn-lg">送信する</button>
-      <p class="form-note" id="formNote" role="status" aria-live="polite" hidden></p>
-    </form>
+    <div class="contact-cta">
+      <div class="contact-cta-icon" aria-hidden="true">✉️</div>
+      <p class="contact-cta-text">下のボタンから、お問い合わせフォームが開きます。<br class="pc-only">お名前・ご連絡先・ご相談内容をご記入のうえ送信してください。</p>
+      <a class="btn btn-primary btn-lg contact-cta-btn"
+         href="https://docs.google.com/forms/d/e/1FAIpQLScN2lBFEi5b_ZpeApkjG7ZMG-4WCc1pW-kRFWFATTRx9Kkwbg/viewform"
+         target="_blank" rel="noopener">お問い合わせフォームを開く ↗</a>
+      <p class="contact-cta-note">※ Googleフォームが別タブで開きます。送信いただいた内容は Shin に直接届きます。</p>
+    </div>
   </div>
 </section>
 
@@ -260,47 +243,6 @@
 
 <script>
 (function () {
-  // ── お問い合わせフォーム（Formspree・非同期送信でその場で結果表示） ──
-  const form = document.getElementById('contactForm');
-  const note = document.getElementById('formNote');
-  if (form) {
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      const btn = form.querySelector('button[type="submit"]');
-      const showNote = (msg, ok) => {
-        note.textContent = msg;
-        note.hidden = false;
-        note.classList.toggle('is-error', !ok);
-      };
-      // フォーム未設定のときのガード
-      if (form.action.includes('YOUR_FORM_ID')) {
-        showNote('※ フォームは現在準備中です。設定完了までお待ちください。', false);
-        return;
-      }
-      btn.disabled = true;
-      const original = btn.textContent;
-      btn.textContent = '送信中…';
-      try {
-        const res = await fetch(form.action, {
-          method: 'POST',
-          body: new FormData(form),
-          headers: { 'Accept': 'application/json' }
-        });
-        if (res.ok) {
-          form.reset();
-          showNote('送信しました。ありがとうございます！折り返しご連絡します。', true);
-        } else {
-          showNote('送信に失敗しました。お手数ですが時間をおいて再度お試しください。', false);
-        }
-      } catch (err) {
-        showNote('通信エラーが発生しました。ネットワークをご確認ください。', false);
-      } finally {
-        btn.disabled = false;
-        btn.textContent = original;
-      }
-    });
-  }
-
   // ── スマホ：メニュー内リンクを押したら閉じる ──
   const toggle = document.getElementById('nav-toggle');
   document.querySelectorAll('.global-nav a').forEach(a => {

@@ -165,6 +165,11 @@ a.work-thumb:hover { transform: translateY(-6px); box-shadow: var(--shadow-hover
 
 /* ══════════ CONTACT ══════════ */
 .contact { background: var(--color-bg-2); }
+.contact-cta { background: #fff; border-radius: var(--radius-lg); padding: clamp(32px, 5vw, 48px) clamp(22px, 4vw, 40px); box-shadow: var(--shadow); text-align: center; }
+.contact-cta-icon { font-size: 40px; line-height: 1; margin-bottom: 16px; }
+.contact-cta-text { font-size: 15px; color: var(--color-muted); line-height: 1.9; margin-bottom: 28px; }
+.contact-cta-btn { display: inline-block; }
+.contact-cta-note { font-size: 12px; color: var(--color-muted); margin-top: 20px; }
 .contact-form { background: var(--color-bg); border-radius: var(--radius-lg); padding: 44px 38px; box-shadow: var(--shadow); text-align: left; }
 .form-group { margin-bottom: 24px; }
 .form-group label { display: block; font-size: 14px; font-weight: 700; margin-bottom: 8px; }
