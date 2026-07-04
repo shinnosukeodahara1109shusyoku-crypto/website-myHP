@@ -134,6 +134,21 @@ ul { list-style: none; }
 .services-note { margin-top: 34px; font-size: 14px; color: var(--color-text-light); text-align: center; }
 .services-note strong { color: var(--pop-yellow); }
 
+/* ══════════ モニター募集（青背景上の白カード） ══════════ */
+.monitor-offer { margin-top: 44px; background: #fff; color: var(--color-navy); border-radius: var(--radius-lg); padding: clamp(28px, 5vw, 44px) clamp(20px, 4vw, 40px); text-align: center; box-shadow: var(--shadow); border: 3px solid var(--pop-yellow); }
+.monitor-badge { display: inline-block; background: var(--pop-yellow); color: var(--color-navy); font-weight: 900; font-size: clamp(13px, 2.4vw, 15px); padding: 8px 20px; border-radius: 999px; margin-bottom: 18px; }
+.monitor-lead { font-size: 15px; color: var(--color-muted); margin-bottom: 26px; }
+.monitor-lead strong { color: var(--color-blue); }
+.monitor-pricebox { display: flex; flex-direction: column; align-items: center; gap: 6px; background: var(--color-bg-2); border-radius: var(--radius); padding: 26px 20px; margin-bottom: 26px; }
+.mp-label { font-size: 14px; font-weight: 700; color: var(--color-blue); }
+.mp-value { font-family: var(--font-en); font-size: clamp(30px, 7vw, 46px); font-weight: 800; letter-spacing: 0.01em; line-height: 1.2; }
+.mp-tilde { font-size: 0.6em; font-weight: 700; color: var(--color-muted); vertical-align: middle; padding: 0 4px; }
+.mp-cap { font-size: 13px; font-weight: 700; color: var(--pop-pink); margin-top: 4px; }
+.monitor-sincere { font-size: 15px; line-height: 1.9; color: var(--color-navy); margin-bottom: 20px; }
+.monitor-sincere strong { color: var(--color-blue); }
+.monitor-note { font-size: 12px; color: var(--color-muted); line-height: 1.7; margin-bottom: 28px; }
+.monitor-offer .btn { display: inline-block; }
+
 /* ══════════ WORKS（ギャラリー） ══════════ */
 .works-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
 .work-thumb { aspect-ratio: 16 / 9; background: #fff; border-radius: var(--radius); display: flex; align-items: center; justify-content: center; overflow: hidden; border: 2px solid var(--color-border); transition: transform 0.2s, box-shadow 0.2s; }
