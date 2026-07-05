@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# 公開後、本番URLに差し替え
-# Sitemap: https://REPLACE.example.com/sitemap.xml
+Sitemap: https://shin-myweb.netlify.app/sitemap.xml
